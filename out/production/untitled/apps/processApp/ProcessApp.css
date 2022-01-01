@@ -1,0 +1,228 @@
+/**************************************************面板设计*******************************************************/
+#mainPane
+{
+    -fx-border-radius: 12 12 12 12;
+    -fx-background-radius: 12 12 12 12;
+    -fx-border-color:transparent;
+    -fx-background-color:white;
+
+}
+#topMainPane
+{
+    /*-fx-background-color: transparent;*/
+    -fx-border-radius: 12 12 12 12;
+    -fx-background-radius: 12 12 12 12;
+    -fx-border-color:black;
+    /*-fx-background-insets: 12;*/
+    /*-fx-border-color:black;*/
+
+}
+#pane
+{
+    -fx-background-color:#F9FAFB;
+    -fx-border-color: transparent;
+    -fx-border-radius: 12 12 0 0;
+    -fx-background-radius: 12 12 0 0;
+
+}
+
+#contentPane
+{
+    -fx-background-color:#F9FAFB;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0 0 12 12 ;
+    -fx-background-radius: 0 0  12 12;
+
+}
+
+
+#titlebar
+{
+
+    -fx-border-color: transparent transparent gray transparent;
+
+    -fx-max-height: 40;
+    -fx-min-height: 40;
+
+    -fx-border-radius: 12 12 0 0;
+    -fx-background-radius: 12 12 0 0;
+    -fx-background-color: white;
+
+}
+
+#titlebarL
+{
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+
+    -fx-max-height: 40;
+    -fx-min-height: 40;
+
+    -fx-border-radius: 12 0 0 0;
+    -fx-background-radius: 12 0 0 0;
+
+}
+
+#titlebarR
+{
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+
+    -fx-max-height: 40;
+    -fx-min-height: 40;
+
+    -fx-border-radius:0 12 0 0;
+    -fx-background-radius: 0 12 0 0;
+}
+
+
+
+#tabLabel
+{
+    -fx-background-color: transparent;
+    -fx-min-height: 5em;
+    -fx-max-height: 5em;
+    -fx-min-width: 10em;
+    -fx-max-width: 10em;
+}
+
+#barIcon
+{
+    -fx-background-color: transparent;
+    -fx-max-height: 35;
+    -fx-max-width: 35;
+    -fx-min-height: 35;
+    -fx-min-width: 35;
+    -fx-background-radius: 12;
+
+}
+
+#barIcon:hover
+{
+    -fx-background-color:#E5E7EB;
+    -fx-background-radius: 12;
+    -fx-max-height: 35;
+    -fx-max-width: 35;
+    -fx-min-height: 35;
+    -fx-min-width: 35;
+    -fx-opacity: 1;
+
+}
+
+#barIcon:pressed
+{
+    -fx-background-color:#E5E7EB;
+    -fx-background-radius: 12;
+    -fx-max-height: 35;
+    -fx-max-width: 35;
+    -fx-min-height: 35;
+    -fx-min-width: 35;
+    -fx-opacity: 0.8;
+}
+
+
+#emptybarIcon
+{
+    -fx-background-color: transparent;
+    -fx-max-height: 35;
+    -fx-max-width: 35;
+    -fx-min-height: 35;
+    -fx-min-width: 35;
+    -fx-background-radius: 12;
+
+}
+#emptybarIcon:hover
+{
+    /*-fx-background-color:#E5E7EB;*/
+    /*-fx-background-radius: 12;*/
+    /*-fx-max-height: 35;*/
+    /*-fx-max-width: 35;*/
+    /*-fx-min-height: 35;*/
+    /*-fx-min-width: 35;*/
+}
+
+/**************************************************面板设计*******************************************************/
+
+
+
+.button
+{
+    -fx-border-width: 0;
+    -fx-background-radius: 12;
+    -fx-background-color: white;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 1em; /* 12 */
+    -fx-border-radius: 12;
+    /*-fx-text-fill: #828282;*/
+}
+
+.tool-bar{
+    /*-fx-border-color: black;*/
+    -fx-background-color:
+        /*transparent,aliceblue;*/
+            rgba(255, 255, 255, 1);
+    -fx-background-radius: 22px;
+    -fx-border-radius: 15px;
+
+}
+
+
+
+
+
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+    /*-fx-background-color: derive;*/
+    -fx-stroke: transparent;
+    -fx-size:30;
+    -fx-alignment: CENTER ;
+    -fx-text-alignment: center;
+
+}
+.table-row-cell:filled:hover {
+
+    -fx-size:30;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+
+
+}
+.table-view:row-selection {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-fixed-cell-size: 30;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+
+}
+
+.table-view .table-column{
+    -fx-text-alignment: center;
+    -fx-alignment: CENTER
+
+}
+
+
+/*#right .text{*/
+/*    -fx-fill : red;*/
+/*}*/
+
+#right .table-column
+{
+    -fx-background-color: lightblue;
+}
+
+#not-right .table-column:even
+{
+    -fx-background-color: white;
+}
+
+#not-right .table-column:odd
+{
+    /*-fx-background-color:LightBase;*/
+}
+/*#not-right .text{*/
+/*    -fx-fill : black;*/
+/*}*/
+

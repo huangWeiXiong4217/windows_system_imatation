@@ -1,0 +1,215 @@
+/**************************************************面板设计*******************************************************/
+#mainPane
+{
+    -fx-border-radius: 12 12 12 12;
+    -fx-background-radius: 12 12 12 12;
+    -fx-border-color:transparent;
+    /*-fx-background-color:white;*/
+    -fx-background-color: #F3F4F6;
+}
+#topMainPane
+{
+    /*-fx-background-color: transparent;*/
+    -fx-border-radius: 12 12 12 12;
+    -fx-background-radius: 12 12 12 12;
+    -fx-border-color:black;
+    /*-fx-background-insets: 12;*/
+    /*-fx-border-color:black;*/
+
+}
+#pane
+{
+    -fx-background-color:#F9FAFB;
+    -fx-border-color: transparent;
+    -fx-border-radius: 12 12 0 0;
+    -fx-background-radius: 12 12 0 0;
+
+}
+
+#contentPane
+{
+    -fx-background-color:#F3F4F6;
+    -fx-border-color: transparent;
+    -fx-border-radius: 12 12 12 12 ;
+    -fx-background-radius: 12 12  12 12;
+    -fx-border-color: #6B7280;
+
+}
+
+
+#titlebar
+{
+
+    -fx-border-color: transparent transparent gray transparent;
+
+    -fx-max-height: 40;
+    -fx-min-height: 40;
+
+    -fx-border-radius: 12 12 0 0;
+    -fx-background-radius: 12 12 0 0;
+    -fx-background-color: white;
+
+}
+
+#titlebarL
+{
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+
+    -fx-max-height: 40;
+    -fx-min-height: 40;
+
+    -fx-border-radius: 12 0 0 0;
+    -fx-background-radius: 12 0 0 0;
+
+}
+
+#titlebarR
+{
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+
+    -fx-max-height: 40;
+    -fx-min-height: 40;
+
+    -fx-border-radius:0 12 0 0;
+    -fx-background-radius: 0 12 0 0;
+}
+
+
+
+#tabLabel
+{
+    -fx-background-color: transparent;
+    -fx-min-height: 5em;
+    -fx-max-height: 5em;
+    -fx-min-width: 10em;
+    -fx-max-width: 10em;
+}
+
+#barIcon
+{
+    -fx-background-color: transparent;
+    -fx-max-height: 35;
+    -fx-max-width: 35;
+    -fx-min-height: 35;
+    -fx-min-width: 35;
+    -fx-background-radius: 12;
+
+}
+
+#barIcon:hover
+{
+    -fx-background-color:#E5E7EB;
+    -fx-background-radius: 12;
+    -fx-max-height: 35;
+    -fx-max-width: 35;
+    -fx-min-height: 35;
+    -fx-min-width: 35;
+    -fx-opacity: 1;
+
+}
+
+#barIcon:pressed
+{
+    -fx-background-color:#E5E7EB;
+    -fx-background-radius: 12;
+    -fx-max-height: 35;
+    -fx-max-width: 35;
+    -fx-min-height: 35;
+    -fx-min-width: 35;
+    -fx-opacity: 0.8;
+}
+
+
+#emptybarIcon
+{
+    -fx-background-color: transparent;
+    -fx-max-height: 35;
+    -fx-max-width: 35;
+    -fx-min-height: 35;
+    -fx-min-width: 35;
+    -fx-background-radius: 12;
+
+}
+#emptybarIcon:hover
+{
+    /*-fx-background-color:#E5E7EB;*/
+    /*-fx-background-radius: 12;*/
+    /*-fx-max-height: 35;*/
+    /*-fx-max-width: 35;*/
+    /*-fx-min-height: 35;*/
+    /*-fx-min-width: 35;*/
+}
+
+/**************************************************面板设计*******************************************************/
+
+
+
+
+#tabpane
+{
+    -fx-tab-min-height: 12em;
+    -fx-tab-max-height: 12em;
+
+    -fx-tab-min-width: 5em;
+    -fx-tab-max-width: 5em;
+}
+
+.tab .tab-label
+{
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+    -fx-text-fill: #EBEAF0;
+}
+
+.tab
+{
+    -fx-background-color: #E5E7EB;
+    -fx-border-insets: 0.0;
+    -fx-border-radius: 0.0;
+    -fx-padding: 0 0 0 0;
+}
+
+.tab:selected
+{
+    -fx-background-color: #F3F4F6;
+    -fx-border-insets: 0.0;
+    -fx-border-radius: 0.0;
+    -fx-border-width: 5 0 0 0;
+    -fx-border-color: black;
+}
+
+.tab:focused
+{
+    -fx-focus-color:transparent;
+}
+
+.tab-pane .tab-header-background
+{
+    -fx-background-color: transparent;
+}
+
+
+
+.tab:selected .focus-indicator
+
+{
+    -fx-border-color:transparent ;
+}
+
+
+
+.text-area
+{
+    -fx-border-radius: 12 12 12 12;
+    -fx-background-radius: 12 12 12 12;
+    -fx-background-color: white;
+}
+.text-area:focused
+{
+    -fx-border-radius: 12 12 12 12;
+    -fx-background-radius: 12 12 12 12;
+    -fx-background-color: white;
+    -fx-highlight-fill:#60A5FA;
+}

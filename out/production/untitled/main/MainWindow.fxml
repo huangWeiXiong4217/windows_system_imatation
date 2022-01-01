@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane fx:id="MainWindow" prefHeight="622.0" prefWidth="1035.0" stylesheets="@MainWindow.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainController">
+   <children>
+      <ImageView fx:id="background" fitHeight="599.0" fitWidth="1035.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/background.png" />
+         </image></ImageView>
+      <Pane id="buttomBar" fx:id="buttomBar" layoutX="-1.0" layoutY="464.0" prefHeight="105.0" prefWidth="1035.0" stylesheets="@MainWindow.css">
+         <children>
+            <HBox id="appBox" fx:id="appBox" alignment="CENTER" layoutX="247.0" layoutY="13.0" prefHeight="84.0" prefWidth="392.0" stylesheets="@MainWindow.css">
+               <children>
+                  <Button id="appButton" fx:id="broswerButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="84.0" prefWidth="85.0" stylesheets="@MainWindow.css" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="66.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/browserIcon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Separator fx:id="separator22" opacity="0.0" orientation="VERTICAL" prefHeight="200.0" />
+                  <Button id="appButton" fx:id="executableFileButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="78.0" stylesheets="@MainWindow.css">
+                     <graphic>
+                        <ImageView fitHeight="54.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/task.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Separator fx:id="separator23" opacity="0.0" orientation="VERTICAL" prefHeight="200.0" />
+                  <Button id="appButton" fx:id="fileManagerButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="78.0" stylesheets="@MainWindow.css">
+                     <graphic>
+                        <ImageView fitHeight="54.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/fileManager.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Separator fx:id="separator24" opacity="0.0" orientation="VERTICAL" prefHeight="200.0" />
+                  <Button id="appButton" fx:id="processButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" mnemonicParsing="false" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="64.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/process.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Separator fx:id="separator25" opacity="0.0" orientation="VERTICAL" prefHeight="200.0" />
+                  <Button id="appButton" fx:id="occupancyButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="55.0" stylesheets="@MainWindow.css">
+                     <graphic>
+                        <ImageView fitHeight="53.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/device.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox id="appBox" fx:id="tipBox" alignment="CENTER" layoutX="634.0" layoutY="12.0" prefHeight="86.0" prefWidth="328.0" spacing="5.0" stylesheets="@MainWindow.css">
+               <children>
+                  <Separator fx:id="separator1" orientation="VERTICAL" prefHeight="86.0" prefWidth="66.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <effect>
+                        <Blend />
+                     </effect></Separator>
+                  <Button id="controllButton" fx:id="helpButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" mnemonicParsing="false">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/help.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Separator fx:id="separator21" opacity="0.0" orientation="VERTICAL" prefHeight="200.0" />
+                  <Button id="controllButton" fx:id="minimizeButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" mnemonicParsing="false" onMouseClicked="#minimizeWindow" prefHeight="67.0" prefWidth="54.0" stylesheets="@MainWindow.css">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/minimize.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Separator fx:id="separator2" opacity="0.0" orientation="VERTICAL" prefHeight="200.0" />
+                  <Button id="controllButton" fx:id="closeButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" mnemonicParsing="false" onMouseClicked="#closeWindow" prefHeight="50.0" prefWidth="65.0" stylesheets="@MainWindow.css">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/close.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <VBox fx:id="timeBox" alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button id="timeButton1" fx:id="timeButton1" mnemonicParsing="false" stylesheets="@MainWindow.css" text="Button" />
+                        <Button id="timeButton2" fx:id="timeButton2" mnemonicParsing="false" stylesheets="@MainWindow.css" text="Button" />
+                     </children>
+                  </VBox>
+                  <Button id="controllButton" fx:id="deskButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" mnemonicParsing="false" stylesheets="@MainWindow.css">
+                     <graphic>
+                        <ImageView fitHeight="51.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imgs/desktop.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets right="6.0" />
+               </padding></HBox>
+         </children>
+      </Pane>
+   </children>
+</Pane>
